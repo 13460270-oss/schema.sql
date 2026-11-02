@@ -3,131 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>服飾商品圖文 Dashboard</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f8; padding: 20px; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        h1 { text-align: center; margin-bottom: 24px; color: #1a1a1a; }
-        
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 20px;
-        }
-
-        .product-card {
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-        }
-
-        .image-container {
-            width: 100%;
-            height: 280px;
-            background-color: #eef2f5;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:hover .product-image {
-            transform: scale(1.05);
-        }
-
-        .category-badge {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(0, 0, 0, 0.65);
-            color: #fff;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            backdrop-filter: blur(4px);
-        }
-
-        .product-info {
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            justify-content: space-between;
-        }
-
-        .product-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        .product-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 12px;
-        }
-
-        .price { font-size: 1.2rem; font-weight: 700; color: #e53935; }
-        .stock { font-size: 0.85rem; color: #757575; }
-    </style>
+    <title>服飾電商商品儀表板 Dashboard</title>
+    <!-- 引入 Tailwind CSS 美化樣式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>60 件服飾商品圖文展報</h1>
-        <div class="product-grid" id="productGrid"></div>
+<body class="bg-gray-100 min-h-screen p-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- 頁首標題 -->
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">👕 服飾商品展示 Dashboard</h1>
+            <p class="text-gray-600">展示來自 TiDB Cloud 的 60 件精選服飾商品</p>
+        </header>
+
+        <!-- 分類篩選按鈕列 -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+            <button onclick="filterProducts('all')" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium shadow hover:bg-blue-700 transition">全部商品</button>
+            <button onclick="filterProducts(1)" class="bg-white text-gray-700 px-4 py-2 rounded-lg font-medium shadow hover:bg-gray-50 transition border border-gray-200">上衣/T恤</button>
+            <button onclick="filterProducts(2)" class="bg-white text-gray-700 px-4 py-2 rounded-lg font-medium shadow hover:bg-gray-50 transition border border-gray-200">褲款/長褲</button>
+            <button onclick="filterProducts(3)" class="bg-white text-gray-700 px-4 py-2 rounded-lg font-medium shadow hover:bg-gray-50 transition border border-gray-200">外套/大衣</button>
+            <button onclick="filterProducts(4)" class="bg-white text-gray-700 px-4 py-2 rounded-lg font-medium shadow hover:bg-gray-50 transition border border-gray-200">裙款/洋裝</button>
+        </div>
+
+        <!-- 商品網格卡片區域 -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- JavaScript 動態渲染欄位 -->
+        </div>
     </div>
 
     <script>
+        let allProducts = [];
+        const categoryNames = {
+            1: '上衣/T恤',
+            2: '褲款/長褲',
+            3: '外套/大衣',
+            4: '裙款/洋裝'
+        };
+
+        // 直接讀取同目錄下的靜態 products.json
         async function loadProducts() {
             try {
-                // 替換為實際 API 網址或本機連線
-                const res = await fetch('/api/products?limit=60');
-                const response = await res.json();
-                const grid = document.getElementById('productGrid');
-                
-                response.data.forEach(item => {
-                    const card = document.createElement('div');
-                    card.className = 'product-card';
-                    card.innerHTML = `
-                        <div class="image-container">
-                            <span class="category-badge">${item.category_name}</span>
-                            <img class="product-image" 
-                                 src="${item.image_url}" 
-                                 alt="${item.product_name}"
-                                 onerror="this.onerror=null;this.src='https://via.placeholder.com/300x400?text=Image+Not+Found';">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-title">${item.product_name}</div>
-                            <div class="product-meta">
-                                <span class="price">NT$ ${item.price}</span>
-                                <span class="stock">庫存: ${item.stock}</span>
-                            </div>
-                        </div>
-                    `;
-                    grid.appendChild(card);
-                });
-            } catch (err) {
-                console.error("載入失敗:", err);
+                const response = await fetch('./products.json');
+                allProducts = await response.json();
+                renderProducts(allProducts);
+            } catch (error) {
+                console.error('無法載入 products.json:', error);
+                document.getElementById('product-grid').innerHTML = 
+                    '<p class="col-span-full text-center text-red-500 font-bold p-8">❌ 載入 products.json 失敗，請確認檔案已成功上傳至同目錄下。</p>';
             }
         }
+
+        // 動態生成 60 筆商品卡片 HTML
+        function renderProducts(products) {
+            const grid = document.getElementById('product-grid');
+            if (!products || products.length === 0) {
+                grid.innerHTML = '<p class="col-span-full text-center text-gray-500">尚無該類別商品</p>';
+                return;
+            }
+
+            grid.innerHTML = products.map(p => `
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col">
+                    <div class="h-64 bg-gray-100 overflow-hidden relative">
+                        <img src="${p.image_url || 'https://via.placeholder.com/300x400?text=無圖片'}" 
+                             alt="${p.product_name}" 
+                             class="w-full h-full object-cover hover:scale-105 transition duration-300"
+                             onerror="this.src='https://via.placeholder.com/300x400?text=圖片載入失敗'">
+                        <span class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow">
+                            ${categoryNames[p.category_id] || '一般商品'}
+                        </span>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-1">${p.product_name}</h3>
+                            <p class="text-xs text-gray-400 mb-3">商品編號: #${p.product_id}</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
+                            <span class="text-xl font-extrabold text-blue-600">NT$ ${p.price}</span>
+                            <span class="text-xs ${p.stock > 0 ? 'text-green-600 bg-green-50' : 'text-red-500 bg-red-50'} font-medium px-2 py-1 rounded">
+                                ${p.stock > 0 ? `庫存: ${p.stock}` : '缺貨中'}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 分類切換按鈕邏輯
+        function filterProducts(categoryId) {
+            if (categoryId === 'all') {
+                renderProducts(allProducts);
+            } else {
+                const filtered = allProducts.filter(p => p.category_id === categoryId);
+                renderProducts(filtered);
+            }
+        }
+
+        // 頁面載入時自動執行
         loadProducts();
     </script>
 </body>
