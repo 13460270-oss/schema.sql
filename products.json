@@ -1,0 +1,602 @@
+[
+  {
+    "product_id":1,
+    "product_name":"純棉T恤 01款",
+    "category_id":1,
+    "price":610.0,
+    "stock":7,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_001.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":2,
+    "product_name":"直筒牛仔褲 02款",
+    "category_id":2,
+    "price":830.0,
+    "stock":14,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_002.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":3,
+    "product_name":"百褶裙 03款",
+    "category_id":3,
+    "price":1050.0,
+    "stock":21,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_003.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":4,
+    "product_name":"防風外套 04款",
+    "category_id":4,
+    "price":1270.0,
+    "stock":28,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_004.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":5,
+    "product_name":"碎花洋裝 05款",
+    "category_id":1,
+    "price":1490.0,
+    "stock":35,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_005.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":6,
+    "product_name":"運動上衣 06款",
+    "category_id":2,
+    "price":1710.0,
+    "stock":4,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_006.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":7,
+    "product_name":"襯衫 07款",
+    "category_id":1,
+    "price":1930.0,
+    "stock":11,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_007.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":8,
+    "product_name":"休閒長褲 08款",
+    "category_id":2,
+    "price":2150.0,
+    "stock":18,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_008.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":9,
+    "product_name":"牛仔短裙 09款",
+    "category_id":3,
+    "price":2370.0,
+    "stock":25,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_009.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":10,
+    "product_name":"丹寧外套 10款",
+    "category_id":4,
+    "price":500.0,
+    "stock":32,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_010.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":11,
+    "product_name":"無袖洋裝 11款",
+    "category_id":1,
+    "price":720.0,
+    "stock":1,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_011.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":12,
+    "product_name":"瑜伽褲 12款",
+    "category_id":2,
+    "price":940.0,
+    "stock":8,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_012.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":13,
+    "product_name":"針織上衣 13款",
+    "category_id":1,
+    "price":1160.0,
+    "stock":15,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_013.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":14,
+    "product_name":"西裝褲 14款",
+    "category_id":2,
+    "price":1380.0,
+    "stock":22,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_014.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":15,
+    "product_name":"長裙 15款",
+    "category_id":3,
+    "price":1600.0,
+    "stock":29,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_015.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":16,
+    "product_name":"連帽外套 16款",
+    "category_id":4,
+    "price":1820.0,
+    "stock":36,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_016.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":17,
+    "product_name":"長袖洋裝 17款",
+    "category_id":1,
+    "price":2040.0,
+    "stock":5,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_017.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":18,
+    "product_name":"訓練短褲 18款",
+    "category_id":2,
+    "price":2260.0,
+    "stock":12,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_018.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":19,
+    "product_name":"短袖上衣 19款",
+    "category_id":1,
+    "price":390.0,
+    "stock":19,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_019.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":20,
+    "product_name":"寬褲 20款",
+    "category_id":2,
+    "price":610.0,
+    "stock":26,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_020.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":21,
+    "product_name":"A字裙 21款",
+    "category_id":3,
+    "price":830.0,
+    "stock":33,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_021.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":22,
+    "product_name":"西裝外套 22款",
+    "category_id":4,
+    "price":1050.0,
+    "stock":2,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_022.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":23,
+    "product_name":"襯衫洋裝 23款",
+    "category_id":1,
+    "price":1270.0,
+    "stock":9,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_023.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":24,
+    "product_name":"運動外套 24款",
+    "category_id":2,
+    "price":1490.0,
+    "stock":16,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_024.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":25,
+    "product_name":"條紋上衣 25款",
+    "category_id":1,
+    "price":1710.0,
+    "stock":23,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_025.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":26,
+    "product_name":"棉質短褲 26款",
+    "category_id":2,
+    "price":1930.0,
+    "stock":30,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_026.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":27,
+    "product_name":"針織裙 27款",
+    "category_id":3,
+    "price":2150.0,
+    "stock":37,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_027.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":28,
+    "product_name":"羊毛外套 28款",
+    "category_id":4,
+    "price":2370.0,
+    "stock":6,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_028.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":29,
+    "product_name":"針織洋裝 29款",
+    "category_id":1,
+    "price":500.0,
+    "stock":13,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_029.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":30,
+    "product_name":"慢跑長褲 30款",
+    "category_id":2,
+    "price":720.0,
+    "stock":20,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_030.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":31,
+    "product_name":"純棉T恤 31款",
+    "category_id":1,
+    "price":940.0,
+    "stock":27,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_031.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":32,
+    "product_name":"直筒牛仔褲 32款",
+    "category_id":2,
+    "price":1160.0,
+    "stock":34,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_032.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":33,
+    "product_name":"百褶裙 33款",
+    "category_id":3,
+    "price":1380.0,
+    "stock":3,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_033.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":34,
+    "product_name":"防風外套 34款",
+    "category_id":4,
+    "price":1600.0,
+    "stock":10,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_034.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":35,
+    "product_name":"碎花洋裝 35款",
+    "category_id":1,
+    "price":1820.0,
+    "stock":17,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_035.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":36,
+    "product_name":"運動上衣 36款",
+    "category_id":2,
+    "price":2040.0,
+    "stock":24,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_036.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":37,
+    "product_name":"襯衫 37款",
+    "category_id":1,
+    "price":2260.0,
+    "stock":31,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_037.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":38,
+    "product_name":"休閒長褲 38款",
+    "category_id":2,
+    "price":390.0,
+    "stock":0,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_038.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":39,
+    "product_name":"牛仔短裙 39款",
+    "category_id":3,
+    "price":610.0,
+    "stock":7,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_039.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":40,
+    "product_name":"丹寧外套 40款",
+    "category_id":4,
+    "price":830.0,
+    "stock":14,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_040.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":41,
+    "product_name":"無袖洋裝 41款",
+    "category_id":1,
+    "price":1050.0,
+    "stock":21,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_041.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":42,
+    "product_name":"瑜伽褲 42款",
+    "category_id":2,
+    "price":1270.0,
+    "stock":28,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_042.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":43,
+    "product_name":"針織上衣 43款",
+    "category_id":1,
+    "price":1490.0,
+    "stock":35,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_043.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":44,
+    "product_name":"西裝褲 44款",
+    "category_id":2,
+    "price":1710.0,
+    "stock":4,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_044.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":45,
+    "product_name":"長裙 45款",
+    "category_id":3,
+    "price":1930.0,
+    "stock":11,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_045.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":46,
+    "product_name":"連帽外套 46款",
+    "category_id":4,
+    "price":2150.0,
+    "stock":18,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_046.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":47,
+    "product_name":"長袖洋裝 47款",
+    "category_id":1,
+    "price":2370.0,
+    "stock":25,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_047.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":48,
+    "product_name":"訓練短褲 48款",
+    "category_id":2,
+    "price":500.0,
+    "stock":32,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_048.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":49,
+    "product_name":"短袖上衣 49款",
+    "category_id":1,
+    "price":720.0,
+    "stock":1,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_049.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":50,
+    "product_name":"寬褲 50款",
+    "category_id":2,
+    "price":940.0,
+    "stock":8,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_050.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":51,
+    "product_name":"A字裙 51款",
+    "category_id":3,
+    "price":1160.0,
+    "stock":15,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_051.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":52,
+    "product_name":"西裝外套 52款",
+    "category_id":4,
+    "price":1380.0,
+    "stock":22,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_052.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":53,
+    "product_name":"襯衫洋裝 53款",
+    "category_id":1,
+    "price":1600.0,
+    "stock":29,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_053.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":54,
+    "product_name":"運動外套 54款",
+    "category_id":2,
+    "price":1820.0,
+    "stock":36,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_054.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":55,
+    "product_name":"條紋上衣 55款",
+    "category_id":1,
+    "price":2040.0,
+    "stock":5,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_055.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":56,
+    "product_name":"棉質短褲 56款",
+    "category_id":2,
+    "price":2260.0,
+    "stock":12,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_056.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":57,
+    "product_name":"針織裙 57款",
+    "category_id":3,
+    "price":390.0,
+    "stock":19,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/outerwear\/outerwear_057.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":58,
+    "product_name":"羊毛外套 58款",
+    "category_id":4,
+    "price":610.0,
+    "stock":26,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/dresses\/dresses_058.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":59,
+    "product_name":"針織洋裝 59款",
+    "category_id":1,
+    "price":830.0,
+    "stock":33,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/tops\/tops_059.jpg",
+    "created_at":1793599544000
+  },
+  {
+    "product_id":60,
+    "product_name":"慢跑長褲 60款",
+    "category_id":2,
+    "price":1050.0,
+    "stock":2,
+    "description":null,
+    "image_url":"https:\/\/raw.githubusercontent.com\/13460270-oss\/schema.sql\/main\/clothing_products_60_photos\/pants\/pants_060.jpg",
+    "created_at":1793599544000
+  }
+]
