@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: clothing-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        sync: false # 提示需在 Render 後台填入敏感的資料庫密碼
