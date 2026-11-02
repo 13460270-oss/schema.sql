@@ -1,0 +1,27 @@
+name: Deploy Database Schema to TiDB Cloud
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'schema.sql'
+
+jobs:
+  deploy-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install MySQL Client
+        run: sudo apt-get install -y mysql-client
+
+      - name: Execute SQL Script on TiDB Cloud
+        run: |
+          mysql -h ${{ secrets.TIDB_HOST }} \
+                -P 4000 \
+                -u "${{ secrets.TIDB_USER }}" \
+                -p"${{ secrets.TIDB_PASSWORD }}" \
+                --ssl-mode=VERIFY_IDENTITY \
+                --ssl-ca=/etc/ssl/certs/ca-certificates.crt \
+                < schema.sql
